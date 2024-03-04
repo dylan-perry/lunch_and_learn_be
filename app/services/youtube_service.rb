@@ -1,14 +1,10 @@
-class YoutubeService
+class YoutubeService < ApplicationService
+
     def conn
         Faraday.new(url: "https://www.googleapis.com/youtube/v3/search") do |faraday|
             faraday.params["key"] = Rails.application.credentials.youtube[:key]
             faraday.headers['Accept'] = 'application/json'
         end
-    end
-
-    def get_url(url)
-        response = conn.get(url)
-        JSON.parse(response.body, symbolize_names: true)
     end
     
     def get_video_by_country(country)

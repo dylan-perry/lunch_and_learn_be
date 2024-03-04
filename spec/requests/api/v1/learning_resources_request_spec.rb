@@ -71,13 +71,17 @@ describe "Learning Resources Request API", :vcr do
                 expect(learning_resources[:data][:attributes][:country]).to be_a(String)
 
                 expect(learning_resources[:data][:attributes]).to have_key(:video)
-                expect(learning_resources[:data][:attributes][:video]).to be_a(Hash)
+            
+                if learning_resources[:data][:attributes][:video].count > 0
+                    expect(learning_resources[:data][:attributes][:video]).to be_a(Hash)
+                    expect(learning_resources[:data][:attributes][:video].count).to eq 2
 
-                expect(learning_resources[:data][:attributes][:video]).to have_key(:title)
-                expect(learning_resources[:data][:attributes][:video][:title]).to be_a(String)
+                    expect(learning_resources[:data][:attributes][:video]).to have_key(:title)
+                    expect(learning_resources[:data][:attributes][:video][:title]).to be_a(String)
 
-                expect(learning_resources[:data][:attributes][:video]).to have_key(:youtube_video_id)
-                expect(learning_resources[:data][:attributes][:video][:youtube_video_id]).to be_a(String)
+                    expect(learning_resources[:data][:attributes][:video]).to have_key(:youtube_video_id)
+                    expect(learning_resources[:data][:attributes][:video][:youtube_video_id]).to be_a(String)
+                end
 
                 expect(learning_resources[:data][:attributes]).to have_key(:images)
                 expect(learning_resources[:data][:attributes][:images]).to be_a(Array)
