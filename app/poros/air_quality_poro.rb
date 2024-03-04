@@ -5,16 +5,11 @@ class AirQualityPoro
         @id = nil
         @aqi = air_quality_hash[:aqi]
         @datetime = air_quality_hash[:datetime]
-        if air_quality_hash[:aqi] == 1
-            @readable_aqi = "Good"
-        elsif air_quality_hash[:aqi] == 2
-            @readable_aqi = "Fair"
-        elsif air_quality_hash[:aqi] == 3
-            @readable_aqi = "Moderate"
-        elsif air_quality_hash[:aqi] == 4
-            @readable_aqi = "Poor"
-        elsif air_quality_hash[:aqi] == 5
-            @readable_aqi = "Very Poor"
-        end
+        @readable_aqi = readable_aqi_enum(air_quality_hash[:aqi])
+    end
+
+    def readable_aqi_enum(aqi)
+        enum = [nil, "Good", "Fair", "Moderate", "Poor", "Very Poor"]
+        enum[aqi]
     end
 end
