@@ -2,10 +2,10 @@ module Facades::ServicesHelper
 
     def process_country_for_services(country)
         if country
-            country
+            country.delete(" ")
         else
             service = prepare_service_rest_country
-            service.get_random_country
+            service.get_random_country.delete(" ")
         end
     end
 
