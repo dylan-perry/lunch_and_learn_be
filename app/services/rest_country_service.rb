@@ -16,7 +16,6 @@ class RestCountryService
     def get_capital_latlon_by_country(country)
         country_results = get_url("https://restcountries.com/v3.1/name/#{country}")
         country_results.map do |result|
-            require 'pry'; binding.pry
             if result[:name][:common].downcase == country.downcase
                 @latlon = {lat: result[:latlng][0], lon: result[:latlng][1]}
             end

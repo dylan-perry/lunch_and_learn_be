@@ -7,10 +7,10 @@ module Facades::ServicesHelper
     
     def process_country_for_services(country)
         if country
-            country.delete(" ")
+            country
         else
             service = prepare_service_rest_country
-            service.get_random_country.delete(" ")
+            service.get_random_country
         end
     end
 
@@ -22,7 +22,7 @@ module Facades::ServicesHelper
         RestCountryService.new
     end
 
-    def prepare_service_youtube
+    def prepare_service_youtubee
         YoutubeService.new
     end
 
