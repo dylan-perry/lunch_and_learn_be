@@ -24,4 +24,8 @@ module Facades::ServicesHelper
     def prepare_service_unsplash
         UnsplashService.new
     end
+
+    def prepare_service_open_weather
+        OpenWeatherService.new
+    end
 end
