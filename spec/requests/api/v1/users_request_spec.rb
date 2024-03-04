@@ -47,6 +47,33 @@ RSpec.describe "Users Request API" do
 
                 expect(response).to_not be_successful 
                 expect(response).to have_http_status(401)
+
+                processed_response = JSON.parse(response.body, symbolize_names: true)
+
+                expect(processed_response).to include({"email": ["has already been taken"]})
+            end
+
+            it "errors out when password does not match password confirmation" do
+
+                user_params = {
+                    name: "Miss Frizzle",
+                    email: "THEFRIZZ@gmail.com",
+                    password: "donkus",
+                    password_confirmation: "chrysanthemum"
+                }
+                headers = { 
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                }
+
+                post api_v1_users_path, headers: headers, params: JSON.generate(user_params)
+
+                expect(response).to_not be_successful 
+                expect(response).to have_http_status(401)
+
+                processed_response = JSON.parse(response.body, symbolize_names: true)
+
+                expect(processed_response).to include({"password_confirmation": ["doesn't match Password"]})
             end
         end
     end

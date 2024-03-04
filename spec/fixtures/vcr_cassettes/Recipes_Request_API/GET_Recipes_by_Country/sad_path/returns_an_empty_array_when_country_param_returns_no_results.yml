@@ -1936,4 +1936,1148 @@ http_interactions:
       encoding: UTF-8
       string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
   recorded_at: Mon, 04 Mar 2024 22:39:47 GMT
+- request:
+    method: get
+    uri: https://api.edamam.com/api/recipes/v2?app_id=<Edamam>&app_key=<Edamam>&q=zaboomafoo&type=public
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 04 Mar 2024 22:42:52 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '49'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Served-By:
+      - ip-10-0-6-132.ec2.internal/10.0.6.132
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=15552001
+      X-Request-Id:
+      - d4b635a16ef6a91a0567f16466b20a7f
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
+  recorded_at: Mon, 04 Mar 2024 22:42:52 GMT
+- request:
+    method: get
+    uri: https://api.edamam.com/api/recipes/v2?app_id=<Edamam>&app_key=<Edamam>&q=zaboomafoo&type=public
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 04 Mar 2024 22:52:26 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '49'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Served-By:
+      - ip-10-0-6-132.ec2.internal/10.0.6.132
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=15552001
+      X-Request-Id:
+      - cab05a5b4567db852a0f90bf0fc7c621
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
+  recorded_at: Mon, 04 Mar 2024 22:52:26 GMT
+- request:
+    method: get
+    uri: https://api.edamam.com/api/recipes/v2?app_id=<Edamam>&app_key=<Edamam>&q=zaboomafoo&type=public
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 04 Mar 2024 22:52:55 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '49'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Served-By:
+      - ip-10-0-6-132.ec2.internal/10.0.6.132
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=15552001
+      X-Request-Id:
+      - 3d779d2ab20bd3e6675b2721fa0984e3
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
+  recorded_at: Mon, 04 Mar 2024 22:52:55 GMT
+- request:
+    method: get
+    uri: https://api.edamam.com/api/recipes/v2?app_id=<Edamam>&app_key=<Edamam>&q=zaboomafoo&type=public
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 04 Mar 2024 22:56:07 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '49'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Served-By:
+      - ip-10-0-6-132.ec2.internal/10.0.6.132
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=15552001
+      X-Request-Id:
+      - 1849d429dfa72e6b16390ca4116c9d60
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
+  recorded_at: Mon, 04 Mar 2024 22:56:07 GMT
+- request:
+    method: get
+    uri: https://api.edamam.com/api/recipes/v2?app_id=<Edamam>&app_key=<Edamam>&q=zaboomafoo&type=public
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 04 Mar 2024 22:57:28 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '49'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Served-By:
+      - ip-10-0-6-104.ec2.internal/10.0.6.104
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=15552001
+      X-Request-Id:
+      - 30fc5d39b1a2c20bf2bc76a122ae5dd1
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
+  recorded_at: Mon, 04 Mar 2024 22:57:28 GMT
+- request:
+    method: get
+    uri: https://api.edamam.com/api/recipes/v2?app_id=<Edamam>&app_key=<Edamam>&q=zaboomafoo&type=public
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 04 Mar 2024 23:00:26 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '49'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Served-By:
+      - ip-10-0-6-132.ec2.internal/10.0.6.132
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=15552001
+      X-Request-Id:
+      - 65e434d60ee9c2a1214cbc84b42b8964
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
+  recorded_at: Mon, 04 Mar 2024 23:00:26 GMT
+- request:
+    method: get
+    uri: https://api.edamam.com/api/recipes/v2?app_id=<Edamam>&app_key=<Edamam>&q=zaboomafoo&type=public
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 04 Mar 2024 23:00:52 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '49'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Served-By:
+      - ip-10-0-6-132.ec2.internal/10.0.6.132
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=15552001
+      X-Request-Id:
+      - 830ccaa39db1532c1f601cfa0318db0a
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
+  recorded_at: Mon, 04 Mar 2024 23:00:52 GMT
+- request:
+    method: get
+    uri: https://api.edamam.com/api/recipes/v2?app_id=<Edamam>&app_key=<Edamam>&q=zaboomafoo&type=public
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 04 Mar 2024 23:04:57 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '49'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Served-By:
+      - ip-10-0-6-132.ec2.internal/10.0.6.132
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=15552001
+      X-Request-Id:
+      - 0fb486f0ee16f8dcf276e8c405d778a6
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
+  recorded_at: Mon, 04 Mar 2024 23:04:57 GMT
+- request:
+    method: get
+    uri: https://api.edamam.com/api/recipes/v2?app_id=<Edamam>&app_key=<Edamam>&q=zaboomafoo&type=public
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 04 Mar 2024 23:06:13 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '49'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Served-By:
+      - ip-10-0-6-104.ec2.internal/10.0.6.104
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=15552001
+      X-Request-Id:
+      - 87c5779c9ca4a7193c8fd67d92305a67
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
+  recorded_at: Mon, 04 Mar 2024 23:06:13 GMT
+- request:
+    method: get
+    uri: https://api.edamam.com/api/recipes/v2?app_id=<Edamam>&app_key=<Edamam>&q=zaboomafoo&type=public
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 04 Mar 2024 23:06:22 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '49'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Served-By:
+      - ip-10-0-6-104.ec2.internal/10.0.6.104
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=15552001
+      X-Request-Id:
+      - 89941ec943c8f5100e50999376653959
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
+  recorded_at: Mon, 04 Mar 2024 23:06:22 GMT
+- request:
+    method: get
+    uri: https://api.edamam.com/api/recipes/v2?app_id=<Edamam>&app_key=<Edamam>&q=zaboomafoo&type=public
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 04 Mar 2024 23:06:59 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '49'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Served-By:
+      - ip-10-0-6-104.ec2.internal/10.0.6.104
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=15552001
+      X-Request-Id:
+      - 3b06aa8e70cb3e8b2987b5508dff0418
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
+  recorded_at: Mon, 04 Mar 2024 23:06:59 GMT
+- request:
+    method: get
+    uri: https://api.edamam.com/api/recipes/v2?app_id=<Edamam>&app_key=<Edamam>&q=zaboomafoo&type=public
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 04 Mar 2024 23:07:13 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '49'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Served-By:
+      - ip-10-0-6-132.ec2.internal/10.0.6.132
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=15552001
+      X-Request-Id:
+      - 1f44e79c112b2d506eea2ca9c90005af
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
+  recorded_at: Mon, 04 Mar 2024 23:07:13 GMT
+- request:
+    method: get
+    uri: https://api.edamam.com/api/recipes/v2?app_id=<Edamam>&app_key=<Edamam>&q=zaboomafoo&type=public
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 04 Mar 2024 23:07:43 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '49'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Served-By:
+      - ip-10-0-6-104.ec2.internal/10.0.6.104
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=15552001
+      X-Request-Id:
+      - ef80969d6fbb5059477f68a4113d476f
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
+  recorded_at: Mon, 04 Mar 2024 23:07:43 GMT
+- request:
+    method: get
+    uri: https://api.edamam.com/api/recipes/v2?app_id=<Edamam>&app_key=<Edamam>&q=zaboomafoo&type=public
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 04 Mar 2024 23:08:13 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '49'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Served-By:
+      - ip-10-0-6-132.ec2.internal/10.0.6.132
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=15552001
+      X-Request-Id:
+      - 224ee2efe4e3f72a8e13ac645929d630
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
+  recorded_at: Mon, 04 Mar 2024 23:08:13 GMT
+- request:
+    method: get
+    uri: https://api.edamam.com/api/recipes/v2?app_id=<Edamam>&app_key=<Edamam>&q=zaboomafoo&type=public
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 04 Mar 2024 23:08:24 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '49'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Served-By:
+      - ip-10-0-6-104.ec2.internal/10.0.6.104
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=15552001
+      X-Request-Id:
+      - be9d1d4b0b79ec95323dee1a03387b66
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
+  recorded_at: Mon, 04 Mar 2024 23:08:24 GMT
+- request:
+    method: get
+    uri: https://api.edamam.com/api/recipes/v2?app_id=<Edamam>&app_key=<Edamam>&q=zaboomafoo&type=public
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 04 Mar 2024 23:08:53 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '49'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Served-By:
+      - ip-10-0-6-132.ec2.internal/10.0.6.132
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=15552001
+      X-Request-Id:
+      - 5749f077745ea839e652d1116b7b009f
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
+  recorded_at: Mon, 04 Mar 2024 23:08:53 GMT
+- request:
+    method: get
+    uri: https://api.edamam.com/api/recipes/v2?app_id=<Edamam>&app_key=<Edamam>&q=zaboomafoo&type=public
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 04 Mar 2024 23:09:06 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '49'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Served-By:
+      - ip-10-0-6-132.ec2.internal/10.0.6.132
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=15552001
+      X-Request-Id:
+      - cfb54a9ce66b3f14c8d14c52ca75fa5f
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
+  recorded_at: Mon, 04 Mar 2024 23:09:06 GMT
+- request:
+    method: get
+    uri: https://api.edamam.com/api/recipes/v2?app_id=<Edamam>&app_key=<Edamam>&q=zaboomafoo&type=public
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 04 Mar 2024 23:10:17 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '49'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Served-By:
+      - ip-10-0-6-132.ec2.internal/10.0.6.132
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=15552001
+      X-Request-Id:
+      - 5ef120f27a3d98607f656d3f33a1d32a
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
+  recorded_at: Mon, 04 Mar 2024 23:10:17 GMT
+- request:
+    method: get
+    uri: https://api.edamam.com/api/recipes/v2?app_id=<Edamam>&app_key=<Edamam>&q=zaboomafoo&type=public
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 04 Mar 2024 23:10:36 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '49'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Served-By:
+      - ip-10-0-6-132.ec2.internal/10.0.6.132
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=15552001
+      X-Request-Id:
+      - 79c5e6c5081d50404de350097b7f379f
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
+  recorded_at: Mon, 04 Mar 2024 23:10:36 GMT
+- request:
+    method: get
+    uri: https://api.edamam.com/api/recipes/v2?app_id=<Edamam>&app_key=<Edamam>&q=zaboomafoo&type=public
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 04 Mar 2024 23:11:30 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '49'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Served-By:
+      - ip-10-0-6-104.ec2.internal/10.0.6.104
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=15552001
+      X-Request-Id:
+      - 87112ad58a4a69b26b3a7603dd87e7ca
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
+  recorded_at: Mon, 04 Mar 2024 23:11:30 GMT
+- request:
+    method: get
+    uri: https://api.edamam.com/api/recipes/v2?app_id=<Edamam>&app_key=<Edamam>&q=zaboomafoo&type=public
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 04 Mar 2024 23:11:50 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '49'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Served-By:
+      - ip-10-0-6-104.ec2.internal/10.0.6.104
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=15552001
+      X-Request-Id:
+      - 5ea481f175f098593be6ffa66632958c
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
+  recorded_at: Mon, 04 Mar 2024 23:11:50 GMT
+- request:
+    method: get
+    uri: https://api.edamam.com/api/recipes/v2?app_id=<Edamam>&app_key=<Edamam>&q=zaboomafoo&type=public
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 04 Mar 2024 23:12:18 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '49'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Served-By:
+      - ip-10-0-6-104.ec2.internal/10.0.6.104
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=15552001
+      X-Request-Id:
+      - f491addc3e222e1797947f9675e08e09
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
+  recorded_at: Mon, 04 Mar 2024 23:12:18 GMT
+- request:
+    method: get
+    uri: https://api.edamam.com/api/recipes/v2?app_id=<Edamam>&app_key=<Edamam>&q=zaboomafoo&type=public
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 04 Mar 2024 23:12:43 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '49'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Served-By:
+      - ip-10-0-6-132.ec2.internal/10.0.6.132
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=15552001
+      X-Request-Id:
+      - b72d20cc3519d74462ef62f349de3940
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
+  recorded_at: Mon, 04 Mar 2024 23:12:43 GMT
+- request:
+    method: get
+    uri: https://api.edamam.com/api/recipes/v2?app_id=<Edamam>&app_key=<Edamam>&q=zaboomafoo&type=public
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 04 Mar 2024 23:13:45 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '49'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Served-By:
+      - ip-10-0-6-132.ec2.internal/10.0.6.132
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=15552001
+      X-Request-Id:
+      - f2e4fac27de106f6a4bce61794a473a6
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
+  recorded_at: Mon, 04 Mar 2024 23:13:45 GMT
+- request:
+    method: get
+    uri: https://api.edamam.com/api/recipes/v2?app_id=<Edamam>&app_key=<Edamam>&q=zaboomafoo&type=public
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 04 Mar 2024 23:22:37 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '49'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Served-By:
+      - ip-10-0-6-104.ec2.internal/10.0.6.104
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=15552001
+      X-Request-Id:
+      - '06739f768f793c3605634910f34fa1d7'
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
+  recorded_at: Mon, 04 Mar 2024 23:22:37 GMT
+- request:
+    method: get
+    uri: https://api.edamam.com/api/recipes/v2?app_id=<Edamam>&app_key=<Edamam>&q=zaboomafoo&type=public
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Mon, 04 Mar 2024 23:23:09 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '49'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - private
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      X-Served-By:
+      - ip-10-0-6-104.ec2.internal/10.0.6.104
+      Content-Language:
+      - en
+      Strict-Transport-Security:
+      - max-age=15552001
+      X-Request-Id:
+      - 61b59a8c90bd30aee4f546d99b7a280d
+    body:
+      encoding: UTF-8
+      string: '{"from":1,"to":0,"count":0,"_links":{},"hits":[]}'
+  recorded_at: Mon, 04 Mar 2024 23:23:09 GMT
 recorded_with: VCR 6.2.0
