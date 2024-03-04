@@ -1,5 +1,4 @@
-class RecipeFacade
-    include Facades::ServicesHelper
+class RecipeFacade < ApplicationFacade
 
     def initialize(country)
         @country = country

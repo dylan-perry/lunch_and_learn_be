@@ -1,5 +1,4 @@
-class LearningResourceFacade
-    include Facades::ServicesHelper
+class LearningResourceFacade < ApplicationFacade
 
     def initialize(country)
         @country = country
