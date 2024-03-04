@@ -1,5 +1,10 @@
 module Facades::ServicesHelper
 
+    def country_valid?(country)
+        service = prepare_service_rest_country
+        validity_result = service.check_country_valid?(country)
+    end
+    
     def process_country_for_services(country)
         if country
             country.delete(" ")

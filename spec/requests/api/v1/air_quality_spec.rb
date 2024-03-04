@@ -30,9 +30,20 @@ describe "Air Quality Request API", :vcr do
                 expect(air_quality[:data][:attributes][:readable_aqi]).to be_a(String)
                 expect(air_quality[:data][:attributes][:readable_aqi]).to eq("Fair")
 
-
                 # Testing other readable_aqi statuses
-                # get '/api/v1/air_quality?country=France'
+                get '/api/v1/air_quality?country=Peru'
+
+                expect(response).to be_successful        
+                air_quality = JSON.parse(response.body, symbolize_names: true)
+
+                # Exact attribute keys
+                expect(air_quality[:data][:attributes].count).to eq 3
+
+                expect(air_quality[:data][:attributes][:aqi]).to be 1
+
+                expect(air_quality[:data][:attributes][:datetime]).to be > 0
+
+                expect(air_quality[:data][:attributes][:readable_aqi]).to eq("Good")
             end
 
             it "returns a list of learning resources from a random country if no country given" do
@@ -63,16 +74,13 @@ describe "Air Quality Request API", :vcr do
             end
         end
 
-        # describe "sad path" do
-        #     it "returns an empty videos hash and images array when country param returns no results" do
-        #         get '/api/v1/learning_resources?country=flkdnqalkjerj'
+        describe "sad path" do
+            it "returns an empty videos hash and images array when country param returns no results" do
+                get '/api/v1/air_quality?country=flkdnqalkjerj'
 
-        #         expect(response).to be_successful  
-        #         learning_resources = JSON.parse(response.body, symbolize_names: true)
-        
-        #         expect(learning_resources[:data][:attributes][:video]).to eq({})
-        #         expect(learning_resources[:data][:attributes][:images]).to eq([])
-        # #     end
-        # end
+                expect(response).to_not be_successful  
+                expect(response.status).to eq(400)
+            end
+        end
     end
 end

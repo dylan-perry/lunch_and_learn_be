@@ -16,10 +16,20 @@ class RestCountryService
     def get_capital_latlon_by_country(country)
         country_results = get_url("https://restcountries.com/v3.1/name/#{country}")
         country_results.map do |result|
+            require 'pry'; binding.pry
             if result[:name][:common].downcase == country.downcase
                 @latlon = {lat: result[:latlng][0], lon: result[:latlng][1]}
             end
         end
         @latlon
+    end
+
+    def check_country_valid?(country)
+        country_results = get_url("https://restcountries.com/v3.1/name/#{country}")
+        if country_results.class == Array # Super hacky method to determine validity, as valid results should always return an array
+            true
+        elsif country_results[:status] == 404
+            false
+        end
     end
 end

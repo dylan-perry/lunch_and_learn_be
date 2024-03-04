@@ -2,7 +2,11 @@ class AirQualityFacade
     include Facades::ServicesHelper
 
     def initialize(country)
-        @country = country
+        if country_valid?(country) || country == nil
+            @country = country
+        else
+            raise ActionController::BadRequest
+        end
     end
     
     def air_quality_by_country
@@ -18,13 +22,6 @@ class AirQualityFacade
     def latlon_by_country(country)
         rest_country_service = prepare_service_rest_country
         latlon_result = rest_country_service.get_capital_latlon_by_country(country)
-
-        ## Edge case handling, not necessary yet
-        # if video_result
-            # latlon_hash = { title: video_result[:snippet][:title], youtube_video_id: video_result[:id][:videoId] }
-        # else
-            # video_hash = {}
-        # end
     end
 
     def air_quality_by_latlon(latlon)
