@@ -15,6 +15,13 @@ RSpec.describe User, type: :model do
         expect(user2).not_to be_valid
         expect(user2.errors[:email]).to include('has already been taken')
       end
+      
+      it "ensures api_key uniqueness case insensitively" do
+        user1 = User.create!(name: "Miss Frizzle", email: "thefrizz@gmail.com", password: "donkus", password_confirmation: "donkus")
+        user2 = User.build(name: "Frss Mizzle", email: "THEFRIZZ@gmail.com", password: "blonkus", password_confirmation: "blonkus")
+
+        expect(user2).not_to be_valid
+      end
     end
   
     describe 'has_secure_password' do

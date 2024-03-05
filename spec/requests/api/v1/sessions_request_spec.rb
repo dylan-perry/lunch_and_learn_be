@@ -1,31 +1,26 @@
 require 'rails_helper'
 
-RSpec.describe "Users Request API" do
-    describe "User Create" do
+RSpec.describe "Sessions Request API" do
+    describe "Session Create" do
         describe "happy path" do
-            it "creates a user" do
+            it "creates a session / logs in a user" do
+                user1 = User.create!(name: "Miss Frizzle", email: "thefrizz@gmail.com", password: "donkus", password_confirmation: "donkus")
+
                 user_params = {
-                    name: "Miss Frizzle",
                     email: "thefrizz@gmail.com",
                     password: "donkus",
-                    password_confirmation: "donkus"
                 }
                 headers = { 
                     "Content-Type": "application/json",
                     "Accept": "application/json"
                 }
 
-                post api_v1_users_path, headers: headers, params: JSON.generate(user_params)
+                post api_v1_sessions_path, headers: headers, params: JSON.generate(user_params)
 
-                new_user = User.last
                 result = JSON.parse(response.body, symbolize_names: true)
 
                 expect(response).to be_successful
-                expect(response.status).to eq(201)
-
-                expect(new_user.name).to eq(user_params[:name])
-                expect(new_user.email).to eq(user_params[:email])
-                expect(new_user.password).to eq(user_params[:password_digest])
+                expect(response.status).to eq(200)
 
                 # JSON formatting according to front end spec
                 expect(result[:data]).to be_a(Hash)
@@ -47,55 +42,75 @@ RSpec.describe "Users Request API" do
                 expect(result[:data][:attributes]).to have_key(:api_key)
                 expect(result[:data][:attributes][:api_key]).to be_a(String)
                 expect(result[:data][:attributes][:api_key]).to eq(User.last.api_key)
+
             end
         end
 
         describe "sad path" do
-            it "errors out when an email already exists" do
+            it "errors out when user password is incorrect" do
                 user1 = User.create!(name: "Miss Frizzle", email: "thefrizz@gmail.com", password: "donkus", password_confirmation: "donkus")
 
                 user_params = {
-                    name: "Miss Frizzle",
-                    email: "THEFRIZZ@gmail.com",
-                    password: "donkus",
-                    password_confirmation: "donkus"
+                    email: "thefrizz@gmail.com",
+                    password: "ferp",
                 }
                 headers = { 
                     "Content-Type": "application/json",
                     "Accept": "application/json"
                 }
 
-                post api_v1_users_path, headers: headers, params: JSON.generate(user_params)
+                post api_v1_sessions_path, headers: headers, params: JSON.generate(user_params)
 
                 expect(response).to_not be_successful 
                 expect(response).to have_http_status(401)
 
                 result = JSON.parse(response.body, symbolize_names: true)
-
-                expect(result).to include({"email": ["has already been taken"]})
+                
+                expect(result[:error]).to eq("Sorry, your credentials are bad!")
             end
 
-            it "errors out when password does not match password confirmation" do
+            it "errors out when user email is incorrect" do
+                user1 = User.create!(name: "Miss Frizzle", email: "thefrizz@gmail.com", password: "donkus", password_confirmation: "donkus")
 
                 user_params = {
-                    name: "Miss Frizzle",
-                    email: "THEFRIZZ@gmail.com",
+                    email: "thefart@gmail.com",
                     password: "donkus",
-                    password_confirmation: "chrysanthemum"
                 }
                 headers = { 
                     "Content-Type": "application/json",
                     "Accept": "application/json"
                 }
 
-                post api_v1_users_path, headers: headers, params: JSON.generate(user_params)
+                post api_v1_sessions_path, headers: headers, params: JSON.generate(user_params)
 
                 expect(response).to_not be_successful 
                 expect(response).to have_http_status(401)
 
                 result = JSON.parse(response.body, symbolize_names: true)
 
-                expect(result).to include({"password_confirmation": ["doesn't match Password"]})
+                expect(result[:error]).to eq("Sorry, your credentials are bad!")
+            end
+
+            it "errors out when user email and password are incorrect" do
+                user1 = User.create!(name: "Miss Frizzle", email: "thefrizz@gmail.com", password: "donkus", password_confirmation: "donkus")
+
+                user_params = {
+                    email: "thefart@gmail.com",
+                    password: "blork",
+                }
+                headers = { 
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                }
+
+                post api_v1_sessions_path, headers: headers, params: JSON.generate(user_params)
+
+                expect(response).to_not be_successful 
+                expect(response).to have_http_status(401)
+
+                result = JSON.parse(response.body, symbolize_names: true)
+
+                expect(result[:error]).to eq("Sorry, your credentials are bad!")
             end
         end
     end
