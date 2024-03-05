@@ -82,7 +82,7 @@ VCR.configure do |config|
   config.filter_sensitive_data('<Unsplash>') {Rails.application.credentials.unsplash[:key]}
   config.filter_sensitive_data('<Unsplash>') {Rails.application.credentials.unsplash[:secret]}
   config.filter_sensitive_data('<YouTube>') {Rails.application.credentials.youtube[:key]}
-  config.default_cassette_options = { re_record_interval: 7.days, record: :new_episodes }
+  config.default_cassette_options = { re_record_interval: 7.days, match_requests_on: [:method, :path] }
   config.configure_rspec_metadata!
   config.allow_http_connections_when_no_cassette = true
 end
