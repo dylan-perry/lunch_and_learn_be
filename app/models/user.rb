@@ -5,6 +5,8 @@ class User < ApplicationRecord
     validates :email, :api_key, uniqueness: { case_sensitive: false }
     validates :email, format: {with: URI::MailTo::EMAIL_REGEXP}
     validates_presence_of :password_digest
+
+    has_many :favorites
     
     has_secure_password
 
