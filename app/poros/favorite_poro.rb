@@ -4,7 +4,7 @@ class FavoritePoro
     def initialize(favorite)
         @id = favorite[:id]
         @recipe_link = favorite[:recipe_link]
-        @recipe_title = favorite[:recipe_link]
+        @recipe_title = favorite[:recipe_title]
         @country = favorite[:country]
         @created_at = favorite[:created_at]
     end

@@ -5,8 +5,10 @@ class FavoriteFacade < ApplicationFacade
     end
 
     def favorites_by_user
+        favorites = []
         @user.favorites.each do |favorite|
-            FavoritePoro.new(favorite)
+            favorites << FavoritePoro.new(favorite)
         end
+        favorites
     end
 end
