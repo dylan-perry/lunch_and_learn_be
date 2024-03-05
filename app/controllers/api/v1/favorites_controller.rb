@@ -2,7 +2,7 @@ class Api::V1::FavoritesController < ApplicationController
 
     # POST /api/v1/favorites
     def create
-        user = User.find_by(api_key: params[:api_key])
+        user = find_user_by_api_key(params[:api_key])
 
         params[:user_id] = user.id # Adding favorite to user
         favorite = Favorite.new(favorite_params)
