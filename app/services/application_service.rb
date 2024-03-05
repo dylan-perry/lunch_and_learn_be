@@ -6,6 +6,6 @@ class ApplicationService
     end
 
     def process_for_url(query)
-        query.gsub(" ", "%20")
+        query.gsub(" ", "+")
     end
 end
