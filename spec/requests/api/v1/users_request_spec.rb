@@ -18,13 +18,35 @@ RSpec.describe "Users Request API" do
                 post api_v1_users_path, headers: headers, params: JSON.generate(user_params)
 
                 new_user = User.last
+                result = JSON.parse(response.body, symbolize_names: true)
 
                 expect(response).to be_successful
-                expect(response.status).to eq(201)
+                expect(response.status).to eq(200)
 
                 expect(new_user.name).to eq(user_params[:name])
                 expect(new_user.email).to eq(user_params[:email])
                 expect(new_user.password).to eq(user_params[:password_digest])
+
+                # JSON formatting according to front end spec
+                expect(result[:data]).to be_a(Hash)
+
+                expect(result[:data][:id]).to eq("1")
+                expect(result[:data][:type]).to eq("user")
+
+                # Exact attribute keys
+                expect(result[:data][:attributes].count).to eq 3
+
+                expect(result[:data][:attributes]).to have_key(:name)
+                expect(result[:data][:attributes][:name]).to be_a(String)
+                expect(result[:data][:attributes][:name]).to eq("Miss Frizzle")
+
+                expect(result[:data][:attributes]).to have_key(:email)
+                expect(result[:data][:attributes][:email]).to be_a(String)
+                expect(result[:data][:attributes][:email]).to eq("thefrizz@gmail.com")
+
+                expect(result[:data][:attributes]).to have_key(:api_key)
+                expect(result[:data][:attributes][:api_key]).to be_a(String)
+                expect(result[:data][:attributes][:api_key]).to eq(User.last.api_key)
             end
         end
 
