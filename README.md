@@ -41,9 +41,7 @@ The Lunch and Learn API exposes the following endpoints for user consumption:
 
 #### ```POST /users``` — Create User
 <details>
-=  <summary>Click to reveal `Create User`</summary>
-
-  
+=  <summary>Expand</summary>
 
   Creates a new user within the database, and returns a JSON response indicating either successful user creation, or unsuccessful user creation with errors.
 
@@ -62,75 +60,21 @@ Exmaple JSON Response:
 
 ### Favorite Endpoints
 
-#### ```GET /favorites``` - All Favorites for User
+#### ```POST /favorites``` — Create User
 <details>
-  <summary>Click to reveal</summary>
-  
-Returns a JSON list of all favorites for a specified user ID.
+=  <summary>Expand</summary>
 
-Note: Relationships may be empty if user is new and has no gardens, sensors, plants, and data.
+  Creates a new user favorite for a user, and returns a JSON response indicating either successful user creation, or unsuccessful user creation with errors.
 
-Example Request:
+  Example Request:
 ```
-GET https://solar-garden-be.herokuapp.com/api/v1/users
+POST localhost:3000/api/v1/users
 ```
 
 Exmaple JSON Response:
 ```
 {
-    "data": [
-        {
-            "id": "1",
-            "type": "user",
-            "attributes": {
-                "id": 1,
-                "email": "rita@example.com"
-            },
-            "relationships": {
-                "user_gardens": {
-                    "data": []
-                },
-                "gardens": {
-                    "data": []
-                }
-            }
-        },
-        
-        {
-            "id": "2",
-            "type": "user",
-            "attributes": {
-                "id": 2,
-                "email": "blake@example.com"
-            },
-            "relationships": {
-                "user_gardens": {
-                    "data": [
-                        {
-                            "id": "479",
-                            "type": "user_garden"
-                        },
-                        {
-                            "id": "483",
-                            "type": "user_garden"
-                        }
-                    ]
-                },
-                "gardens": {
-                    "data": [
-                        {
-                            "id": "486",
-                            "type": "garden"
-                        },
-                        {
-                            "id": "490",
-                            "type": "garden"
-                        }
-                    ]
-                }
-            }
-        }
-    ]
+    "success": "User created successfully!"
 }
 ```
 </details>
