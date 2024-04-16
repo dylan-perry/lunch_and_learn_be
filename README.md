@@ -37,12 +37,34 @@ The Lunch and Learn API exposes the following endpoints for user consumption:
 - [Session Endpoints](#session-endpoints)
   - [POST Create Session for User](#post-sessions---create-session)
  
+### User Endpoints
+
+#### ```POST /users``` - Create User
+<details>
+  <summary>Click to reveal</summary>
+
+  Creates a new user within the database, and returns a JSON response indicating either successful user creation, or unsuccessful user creation with errors.
+
+  Example Request:
+```
+POST localhost:3000/api/v1/users
+```
+
+Exmaple JSON Response:
+```
+{
+    "success": "User created successfully!"
+}
+```
+</details>
+
 ### Favorite Endpoints
 
+#### ```GET /favorites``` - All Favorites for User
 <details>
-  ####<summary>```GET /favorites``` - All Favorites</summary>
+  <summary>Click to reveal</summary>
   
-Returns a JSON list of all users as well as associated relationships.
+Returns a JSON list of all favorites for a specified user ID.
 
 Note: Relationships may be empty if user is new and has no gardens, sensors, plants, and data.
 
@@ -51,8 +73,8 @@ Example Request:
 GET https://solar-garden-be.herokuapp.com/api/v1/users
 ```
 
-Exmaple Response:
-```json
+Exmaple JSON Response:
+```
 {
     "data": [
         {
