@@ -39,10 +39,11 @@ The Lunch and Learn API exposes the following endpoints for user consumption:
  
 ### User Endpoints
 
-#### - ```POST /users``` - Create User
 <details>
+  #### ```POST /users``` - Create User
   <summary>- Click to reveal</summary>
 
+  
 
   Creates a new user within the database, and returns a JSON response indicating either successful user creation, or unsuccessful user creation with errors.
 
