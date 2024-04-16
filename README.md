@@ -39,9 +39,9 @@ The Lunch and Learn API exposes the following endpoints for user consumption:
  
 ### User Endpoints
 
+#### ```POST /users``` — Create User
 <details>
-  #### ```POST /users``` - Create User
-  <summary>- Click to reveal</summary>
+=  <summary>Click to reveal `Create User`</summary>
 
   
 
