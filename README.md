@@ -40,7 +40,8 @@ The Lunch and Learn API exposes the following endpoints for user consumption:
 ### Favorite Endpoints
 
 <details>
-  <summary>#### ```GET /favorites``` - All Favorites</summary>
+  ####<summary>```GET /favorites``` - All Favorites</summary>
+  
 Returns a JSON list of all users as well as associated relationships.
 
 Note: Relationships may be empty if user is new and has no gardens, sensors, plants, and data.
